@@ -1,113 +1,87 @@
-body {
-  font-size: 16px;
-  color: #fff;
-  background-color: #e6f9ff; 
-  font-family: 'Oxygen', sans-serif;
+.navbar.navbar-default {
+  background-color: #ddd;
+  border-radius: 0;
+  border: 1px solid black;
+}
+.navbar-default .navbar-brand {
+  color: black;
+  font-weight: bold;
+}
+.navbar-default .navbar-toggle.collapsed {
+  border-color: black;
+}
+.navbar-default .navbar-toggle.collapsed .icon-bar {
+  background-color: black;
+}
+.navbar-default .navbar-toggle.collapsed:hover,
+.navbar-default .navbar-toggle {
+  border-color: white;
 }
 
-h1 { 
-	font-family: 'Lora', sans-serif;
-	color:#ffffff;
-	font-size: 1.5em;
-	font-weight: bold;
-	margin-top: 0;
-	margin-bottom: 0;
-	line-height: .75;
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
 }
 
-h2 { 
-	font-family: 'Lora', sans-serif;
-	color:#006080;
-	/*font-size: 1.8em;*/
-	font-weight: bold;
-	margin-top: 20px;
-	line-height: .75;
+#navbar-menu li {
+  border: 1px solid gray;
 }
 
-h3 { 
-	font-family: 'Lora', sans-serif;
-	/*font-size: 1.3em;*/
-	font-weight: bold;
+h2 {
+  margin-bottom: 30px;
 }
 
-
-
-/** ============= HEADER ===================== **/
-#header-nav {
-	background-color: #cc6600;  
+div.section {
+  background-color: #ddd;
+  padding: 5px 20px 15px 20px;
+  margin-bottom: 20px;
 }
 
-/*Menu items*/
-#nav-list {
-  margin-top: 10px;
-  background-color: #804000; 
+@media (max-width: 768px) {
+  #navbar-menu {
+    background-color: white;
+  }
+.navbar.navbar-default {
+  background-color: #ddd;
+  border-radius: 0;
+  border: 1px solid black;
 }
-#nav-list a { /*dropdown menu colors*/
-  color: #ffffff;
-  background: #992600;
-  text-align: center;
+.navbar-default .navbar-brand {
+  color: black;
+  font-weight: bold;
 }
-#nav-list a:hover {
-  background: #661a00;
+.navbar-default .navbar-toggle.collapsed {
+  border-color: black;
 }
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #661a00;
+.navbar-default .navbar-toggle.collapsed .icon-bar {
+  background-color: black;
 }
-
-/** ============= Main content ===================== **/
-
-#main-content a {
-	text-decoration: none;
-}
-
-.sectiontxt h3 {
-	padding: 5px 0px 15px 0px ;
-	margin: 10px 0px 0px 0px ;
+.navbar-default .navbar-toggle.collapsed:hover,
+.navbar-default .navbar-toggle {
+  border-color: white;
 }
 
-div.sectiontxt{
-	margin: 10px;
-	background: #006080;
-	color: #e6f9ff;
-	padding: 15px;
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
 }
 
-.sectiontxt a {
-	color: #ffcc00;
+#navbar-menu li {
+  border: 1px solid gray;
 }
 
-.sectiontxt a:hover {
-	color: #ff9900;
+h2 {
+  margin-bottom: 30px;
 }
 
-/** #################################################################### **/
-/** ============= Media queries ===================== **/
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-.navbar-brand h1 {font-size: 2em;}
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.5em; }
+div.section {
+  background-color: #ddd;
+  padding: 5px 20px 15px 20px;
+  margin-bottom: 20px;
 }
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) { 
-.navbar-brand h1 {font-size: 1.8em;}
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.3em; }
-}
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) { 
-.navbar-brand h1 {font-size: 1.5em;}
-h2 { font-size: 1.3em; }
-h3 { font-size: 1.1em; }
-}
-
-/********** Extra small devices only **********/
-@media (max-width: 767px) { 
-.navbar-brand h1 {font-size: 1.5em;} 
-h2 { font-size: 1.3em; }
-h3 { font-size: 1.1em; }
+@media (max-width: 768px) {
+  #navbar-menu {
+    background-color: white;
+  }
 }

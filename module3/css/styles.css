@@ -1,133 +1,117 @@
-body{
-
-	font-family: comic sans ms;
+body {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
 }
 
-#header-nav{
-	border-radius: 0;
-	border: 1px solid #000000;
-	background-color: #b4b4b4;
+/** HEADER **/
+#header-nav {
+  background-color: violet;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+/* Food LLC Name */
+.navbar-brand h1 { 
+  font-family: 'Times New Roman', serif;
+  color: red;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
 }
 
-.navbar h1{
-	font-size: 1.4em;
-	color: #000000;
-	font-weight: bold;
-	text-align: left;
-	margin-bottom: 0;
-	margin-top: 0;
-	margin-left: 10px;
+#nav-list {
+  margin-top: 10px;
 }
-
-#nav-list{
-	margin-top: 0;
-	margin-bottom: 0;
-	text-align: center;
-	background-color: #fff;
+#nav-list a {
+  color: #951C49;
+  text-align: center;
 }
-
-#nav-list li{
-	border: 1px solid #000000;
-
+#nav-list a:hover {
+  background: #E7E7E7;
 }
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-	border: 1px solid #000000;
+#nav-list a span {
+  font-size: 1.8em;
 }
-
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid beige;
+  background-color: #0B0B3B;
+}
 .navbar-header button.navbar-toggle {
-	margin-top: 10px;
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+.container .ourMenu {
+  color: blue;
+  padding: 5px; 
 }
 
-#type-alignment{
-	text-align: center;
-	margin-bottom: 30px;
-	font-weight: bold;
+#menu-chicken, #menu-beef, #menu-sushi {
+  width: 100%;
+  margin: 10px;
+  position: relative;
+  background-color: #D8D8D8;
+  overflow: hidden;
 }
 
-div #home-menu{
-	border: hidden;
-	background-color: #b4b4b4;
-	margin: 25px 5px 25px 5px;
-	height: 1000px;
-	display: block;
-	overflow: hidden;
+#chickenTitle, #menu-beef, #menu-sushi {
+  background-position: center;
+}
+#chickenTitle span, #beefTitle span, #sushiTitle span {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  color: black;
+}
+.chickenFood {
+  color: black;
+  margin-top: 30px;
+  padding: 10px 10px 10px;
 }
 
-#home-menu h3{
-	text-align: center;
-	padding-top: 10px;
-	font-weight: bold;
+/* END HOME PAGE */
+
+/********** Desktop **********/
+@media (min-width: 1200px) {
+  #header-nav {
+    height: 86px 
+  }
+  .navbar-brand h1 {
+    font-size: 2.3em;
+  }
 }
 
-#home-menu p{
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-bottom: 0;
-body{
+/********** Tablet **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
 
-	font-family: comic sans ms;
+  #header-nav {
+    height: 80px 
+  }
+  .navbar-brand h1 {
+    font-size: 2.0em;
+  }
+  /* End Header */
 }
 
-#header-nav{
-	border-radius: 0;
-	border: 1px solid #000000;
-	background-color: #b4b4b4;
-}
-
-.navbar h1{
-	font-size: 1.4em;
-	color: #000000;
-	font-weight: bold;
-	text-align: left;
-	margin-bottom: 0;
-	margin-top: 0;
-	margin-left: 10px;
-}
-
-#nav-list{
-	margin-top: 0;
-	margin-bottom: 0;
-	text-align: center;
-	background-color: #fff;
-}
-
-#nav-list li{
-	border: 1px solid #000000;
-
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-	border: 1px solid #000000;
-}
-
-.navbar-header button.navbar-toggle {
-	margin-top: 10px;
-}
-
-#type-alignment{
-	text-align: center;
-	margin-bottom: 30px;
-	font-weight: bold;
-}
-
-div #home-menu{
-	border: hidden;
-	background-color: #b4b4b4;
-	margin: 25px 5px 25px 5px;
-	height: 1000px;
-	display: block;
-	overflow: hidden;
-}
-
-#home-menu h3{
-	text-align: center;
-	padding-top: 10px;
-	font-weight: bold;
-}
-
-#home-menu p{
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-bottom: 0;
+/********** Mobile **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  #header-nav {
+    height: 60px 
+  }
+  .navbar-brand h1 {
+    font-size: 1.0em;
+  }
 }
